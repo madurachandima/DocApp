@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Category_consulter.consulter_dashboard.FragmentVideoUpload">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/id_videocat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="104dp"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="Select catogary"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/appCompatVideoSpinner2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/appCompatVideoSpinner2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_videocat" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="Video Name "
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/id_uploadVideoSongName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/appCompatVideoSpinner2" />
+
+        <EditText
+            android:id="@+id/id_uploadVideoSongName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Video Name"
+            app:layout_constraintBottom_toTopOf="@+id/id_uploadVideoDate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView4" />
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/id_uploadVideoBy"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="40dp"-->
+        <!--            android:hint="Video Name"-->
+        <!--            app:layout_constraintBottom_toTopOf="@+id/id_uploadVideoDate"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/id_uploadVideoSongName" />-->
+
+        <TextView
+            android:id="@+id/id_uploadVideoDate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_id_upload_song"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/id_uploadVideoSongName" />
+
+        <Button
+            android:id="@+id/btn_id_uploadVideo_song"
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:background="@drawable/btn_round"
+            android:backgroundTint="#3282b8"
+            android:fontFamily="@font/poppins"
+            android:text="Upload Video"
+            app:layout_constraintBottom_toTopOf="@+id/progressVideoUpload"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/id_uploadVideoDate" />
+
+        <ProgressBar
+            android:id="@+id/progressVideoUpload"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_id_uploadVideo_song" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

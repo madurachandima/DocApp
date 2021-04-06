@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "751405202615",
+    "firebase_url": "https://docapp-66f28.firebaseio.com",
+    "project_id": "docapp-66f28",
+    "storage_bucket": "docapp-66f28.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:751405202615:android:2f657915b694a67f3ee132",
+        "android_client_info": {
+          "package_name": "com.example.docapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "751405202615-ghat8k6lpjkkjq2268cq6otouc7c4bpf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.docapp",
+            "certificate_hash": "867d48500b93bf4a11f3be0b1c0b736b462105f4"
+          }
+        },
+        {
+          "client_id": "751405202615-mjv9nhvcr3jul6v0lkieja32ap8frbqo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTqMVRzyQKoaJPQ0LKWWjYolQufbVKPuI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "751405202615-mjv9nhvcr3jul6v0lkieja32ap8frbqo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

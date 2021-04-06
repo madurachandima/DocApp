@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Category_consulter.consulter_dashboard.FragmentHome">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <TextView
+           android:id="@+id/text"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:fontFamily="@font/poppins"
+           android:gravity="center"
+           android:text="The best way to find yourself is to lose yourself in the
+service of other."
+           android:textSize="30sp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintBottom_toTopOf="@id/id_image"/>
+
+       <ImageView
+           android:id="@+id/id_image"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:scaleType="fitCenter"
+           android:src="@drawable/colsetonew"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@id/text"/>
+
+
+
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

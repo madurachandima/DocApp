@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Category_consulter.consulter_dashboard.FragmentProfileSetting">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/con_change_proPic"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="70dp"
+                    app:layout_constraintBottom_toTopOf="@id/btn_con_change_proPic"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/btn_con_change_proPic"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_baseline_edit_24"
+                    app:layout_constraintBottom_toTopOf="@id/con_edit_name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/con_change_proPic" />
+
+                <EditText
+                    android:id="@+id/con_edit_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Consultant Name"
+                    android:textSize="16dp"
+                    app:layout_constraintBottom_toTopOf="@id/con_edit_contactNo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btn_con_change_proPic" />
+
+                <EditText
+                    android:id="@+id/con_edit_contactNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Consultant Contact Number"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@id/con_edit_location"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/con_edit_name" />
+
+                <EditText
+                    android:id="@+id/con_edit_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Consultant Location"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@id/con_edit_avlTime"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/con_edit_contactNo" />
+
+                <EditText
+                    android:id="@+id/con_edit_avlTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Consultant Available Time"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@id/con_edit_description"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/con_edit_location" />
+
+                <EditText
+                    android:id="@+id/con_edit_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Consultant Description"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@id/con_edit_Xp_years"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/con_edit_avlTime" />
+
+                <EditText
+                    android:id="@+id/con_edit_Xp_years"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Years of Experience"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@id/con_edit_Hospital_name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/con_edit_description" />
+
+
+                <EditText
+                    android:id="@+id/con_edit_Hospital_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Hospital Name"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@id/btn_con_edit_openMap"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/con_edit_Xp_years" />
+
+                <Button
+                    android:id="@+id/btn_con_edit_openMap"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/btn_round"
+                    android:backgroundTint="#056676"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Set location from Map"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@id/btn_con_edit_changepw"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/con_edit_Hospital_name" />
+
+                <Button
+                    android:id="@+id/btn_con_edit_changepw"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/btn_round"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Change Password"
+                    android:textSize="16sp"
+                    android:backgroundTint="#318fb5"
+                    app:layout_constraintBottom_toTopOf="@id/btn_con_edit_save"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btn_con_edit_openMap" />
+
+                <Button
+                    android:id="@+id/btn_con_edit_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/btn_round"
+                    android:fontFamily="@font/poppins"
+                    android:backgroundTint="#93b5e1"
+                    android:hint="Save"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@id/con_edit_prBar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btn_con_edit_changepw" />
+
+                <ProgressBar
+                    android:id="@+id/con_edit_prBar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btn_con_edit_save" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

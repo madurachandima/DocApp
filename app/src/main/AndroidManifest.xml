@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.docapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".admin_handeling.ApproveCon"></activity>
+        <activity android:name=".consultanr_handeling.ConsultantRequest" />
+        <activity android:name=".admin_handeling.AdminView" />
+        <activity android:name=".user_handeling.user_profile_settings.UserProfileManage" />
+        <activity
+            android:name=".Category_video.VideoPlayer.VideoPlayer"
+            android:configChanges="orientation|screenSize|layoutDirection" />
+        <activity android:name=".Category_video.VideoPlayer.ViewVideoFiles" />
+        <activity
+            android:name=".Category_consulter.consulter_dashboard.ConsulterDashbordMain"
+            android:theme="@style/AppTheme.NoActionbar" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/mapKey" />
+
+        <activity
+            android:name=".Category_consulter.consulter_dashboard.consultant_map.ConsultantMap"
+            android:theme="@style/AppTheme.NoActionbar" />
+        <activity android:name=".Category_consulter.SingleConsulter.FindLocation.ConsulterLocationMap" />
+        <activity android:name=".category_music.player.MusicPlayer" />
+        <activity android:name=".category_music.CategoryMusicMain" />
+        <activity android:name=".Category_consulter.SingleConsulter.SingleConsulter" />
+        <activity android:name=".Category_consulter.Consulter" />
+        <activity android:name=".category_main.Catogary" />
+        <activity android:name=".user_handeling.MainActivity" />
+        <activity android:name=".user_handeling.UserLogin" />
+        <activity android:name=".user_handeling.ConsultantRegistration" />
+
+        <activity
+            android:name=".spalsh_screen.SplashScreen"
+            android:theme="@style/splashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

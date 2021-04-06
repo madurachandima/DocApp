@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Category_consulter.consulter_dashboard.FragmentSongUpload">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/id_cat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="104dp"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="Select catogary"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/appCompatSpinner2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/appCompatSpinner2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_cat" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="Music Name "
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/id_uploadSongName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/appCompatSpinner2" />
+
+        <EditText
+            android:id="@+id/id_uploadSongName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Music Name"
+            app:layout_constraintBottom_toTopOf="@+id/btn_id_upload_song"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView4" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/id_Song_upload_by"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:hint="Music upload By"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/id_Song_upload_time"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/id_uploadSongName" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/id_Song_upload_time"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:hint="Music upload Date"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/btn_id_upload_song"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/id_Song_upload_by" />-->
+
+        <Button
+            android:id="@+id/btn_id_upload_song"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/poppins"
+            android:layout_height="120px"
+            android:text="Upload Music"
+            android:background="@drawable/btn_round"
+            android:backgroundTint="#3282b8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/id_uploadSongName"
+            app:layout_constraintBottom_toTopOf="@+id/progressUpload"
+           />
+
+        <ProgressBar
+            android:id="@+id/progressUpload"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_id_upload_song" />
+
+        <!--        <Button-->
+<!--            android:id="@+id/btn_done"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="120px"-->
+<!--            android:layout_marginBottom="302dp"-->
+<!--            android:fontFamily="@font/poppins"-->
+<!--            android:text="Done"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/btn_id_upload_song" />-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

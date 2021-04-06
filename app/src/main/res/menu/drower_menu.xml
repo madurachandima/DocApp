@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/id_home"
+    android:icon="@drawable/ic_baseline_home_24"
+    android:title="Home"
+    />
+    <item
+        android:id="@+id/id_songUpload"
+        android:icon="@drawable/ic_baseline_cloud_upload_24"
+        android:title="Upload Songs" />
+    <item
+        android:id="@+id/id_uploadVideo"
+        android:icon="@drawable/ic_baseline_cloud_upload_24"
+        android:title="Upload Video" />
+    <item
+        android:id="@+id/id_ReplyFeedback"
+        android:icon="@drawable/ic_baseline_reply_24"
+        android:title="Reply Message" />
+    <item
+        android:id="@+id/id_ProfileSetting"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="Profile Setting" />
+    <item
+        android:id="@+id/id_signOut"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="SignOut" />
+</menu>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Close To Heart</string>
+    <string name="Close">Close</string>
+    <string name="open">Open</string>
+
+    <string-array name="SongCat">
+        <item>Mind Relaxing</item>
+        <item>Relaxing</item>
+        <item>Chill</item>
+        <item>Soul</item>
+    </string-array>
+
+    <string-array name="VideoCat">
+        <item>Mind Relaxing</item>
+        <item>Relaxing</item>
+        <item>Chill</item>
+        <item>Soul</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
